@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 cd $PWD/firmware
 source /opt/ros/kinetic/setup.bash

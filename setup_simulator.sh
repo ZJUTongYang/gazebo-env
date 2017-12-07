@@ -5,7 +5,7 @@ git clone https://github.com/px4/firmware $PWD/firmware
 
 # Build SITL and wait for it to ask for input, then kill
 cd $PWD/firmware
-nohup sh -c 'no_sim=1 make posix_sitl_default gazebo' &
+nohup sh -c 'HEADLESS=1 make posix_sitl_default gazebo' &
 echo "Waiting for SITL to build..."
 # Adding a tee in here got annoying
 tail -f -n0 $PWD/nohup.out | grep -qe 'Please start the flight simulator to proceed'

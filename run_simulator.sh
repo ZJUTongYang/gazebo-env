@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 screen -dmS "px4_sitl.$(hostname)" $PWD/px4_start.sh
 
